@@ -1,0 +1,16 @@
+$black: #000000;
+$gray01: #E5E5E6;
+$white: #ffffff;
+
+@mixin flex-element($direction: row, $align: center, $justify: space-between) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+  }
+  
+  @mixin breakpoint($screenWidth) {
+    @media (max-width: $screenWidth) {
+      @content;
+    }
+  }
