@@ -168,6 +168,8 @@ section:nth-child(3) {
 
 section:nth-child(4) {
     background: #00D8CF;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         color: rgb(255 255 255 / 96%);

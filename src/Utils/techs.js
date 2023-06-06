@@ -1,4 +1,4 @@
-// import react from "../Assets/imgs/logo-react-icon.png"
+import reacts from "../Assets/imgs/logo-react-icon.png"
 // import js from "../Assets/imgs/JavaScript-logo.png"
 // import python from "../Assets/imgs/Python-logo-notext.svg.png"
 // import html from "../Assets/imgs/HTML5_logo_and_wordmark.svg.png"
@@ -53,4 +53,35 @@ const techs = [
     },
 ]
 
-export default techs; 
+const experiences = [
+    {
+      title: 'Técnico em Eletrônica',
+      company_name: 'Instituto Federal de Santa Catarina',
+      icon: reacts,
+      iconBg: '#333333',
+      date: 'Aug 2021 - Feb 2022',
+    },
+    {
+      title: 'Mentor (Volunteer)',
+      company_name: 'Microverse',
+      icon: reacts,
+      iconBg: '#333333',
+      date: 'Mar 2022 - May 2022',
+    },
+    {
+      title: 'Junior Software Engineer',
+      company_name: 'Kelhel',
+      icon: reacts,
+      iconBg: '#333333',
+      date: 'May 2022 - Oct 2022',
+    },
+    {
+      title: 'Full Stack Developer',
+      company_name: 'Diversity Cyber Council',
+      icon: reacts,
+      iconBg: '#333333',
+      date: 'Sep 2022 - Present',
+    },
+  ];
+
+export {techs, experiences}; 
