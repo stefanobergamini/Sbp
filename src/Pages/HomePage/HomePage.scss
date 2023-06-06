@@ -9,7 +9,6 @@ section {
     text-align: center;
     position: relative;
     width: 100%;
-    background: #3586ff;
     overflow: hidden;
     padding-top: 50px;
 
@@ -161,16 +160,7 @@ section:nth-child(3) {
 
 section:nth-child(4) {
     background: #00D8CF;
-    display: flex;
     flex-direction: column;
-
-    h2 {
-        color: rgb(255 255 255 / 96%);
-    }
-
-    p {
-        color: rgb(255 255 255 / 70%);
-    }
 }
 
 

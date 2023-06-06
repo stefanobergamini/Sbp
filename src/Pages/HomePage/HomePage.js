@@ -6,6 +6,7 @@ import { fadeIn, slideIn, textVariant } from '../../Utils/motion';
 import BemVindo from '../../Components/BemVindo/BemVindo';
 import Sobre from '../../Components/Sobre/Sobre';
 import Timeline from '../../Components/Timeline/Timeline';
+import Footer from '../../Components/Footer/Footer';
 
 export default function HomePage() {
 
@@ -18,6 +19,9 @@ export default function HomePage() {
       <Sobre />
 
       <Timeline />
+
+      <Footer />
+      
       {/* <section id="work" className="section">
         <div className="container">
           <div className="content-wrapper text-center">
