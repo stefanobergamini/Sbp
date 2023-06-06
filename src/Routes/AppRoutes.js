@@ -6,7 +6,7 @@ import About from "../Pages/About/About";
 
 export default function Rotas() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/About" element={<About />} />
