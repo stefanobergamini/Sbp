@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/Sbp/static/css/main.04cc3ce5.css",
-    "main.js": "/Sbp/static/js/main.a33e0bef.js",
+    "main.css": "/Sbp/static/css/main.73c4f985.css",
+    "main.js": "/Sbp/static/js/main.62b0eed8.js",
+    "static/media/python.webp": "/Sbp/static/media/python.27a5d4bf480c5366948d.webp",
+    "static/media/UFSC.png": "/Sbp/static/media/UFSC.c4b7d88c80728f23d626.png",
+    "static/media/Stefano_Bergamini_Poletto.pdf": "/Sbp/static/media/Stefano_Bergamini_Poletto.3e61cb45408ddf53c547.pdf",
     "static/media/logo-react-icon.png": "/Sbp/static/media/logo-react-icon.283bf42c605cfc49cf49.png",
     "static/media/photo.jpg": "/Sbp/static/media/photo.03f30fde0f92529ec3c5.jpg",
+    "static/media/Logo_IFSC.png": "/Sbp/static/media/Logo_IFSC.aa91c540f0f838048f73.png",
     "index.html": "/Sbp/index.html",
-    "main.04cc3ce5.css.map": "/Sbp/static/css/main.04cc3ce5.css.map",
-    "main.a33e0bef.js.map": "/Sbp/static/js/main.a33e0bef.js.map"
+    "main.73c4f985.css.map": "/Sbp/static/css/main.73c4f985.css.map",
+    "main.62b0eed8.js.map": "/Sbp/static/js/main.62b0eed8.js.map"
   },
   "entrypoints": [
-    "static/css/main.04cc3ce5.css",
-    "static/js/main.a33e0bef.js"
+    "static/css/main.73c4f985.css",
+    "static/js/main.62b0eed8.js"
   ]
 }
