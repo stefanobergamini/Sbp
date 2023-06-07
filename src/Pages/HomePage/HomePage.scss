@@ -56,7 +56,7 @@ section {
 }
 
 section:nth-child(2) {
-    background: #29abe2;
+    background: linear-gradient(180deg, rgba(0,195,227,1) 0%, rgba(0,216,207,1) 97%);;
 
     .content-wrapper {
         display: flex;
@@ -90,7 +90,8 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
-    background: #00C3E3;
+    background: linear-gradient(180deg, rgba(0,195,227,1) 0%, rgba(0,200,223,1) 73%, rgba(0,214,209,1) 95%, rgba(0,216,207,1) 98%, rgba(0,216,207,1) 100%);
+
     gap: 50px;
     padding-top: 100px;
 
