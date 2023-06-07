@@ -11,21 +11,30 @@ $color-react: hsl(180, 100%, 60%);
 $color-angular: hsl(0, 100%, 60%);
 $color-vue: hsl(145, 100%, 60%);
 
-$porcent-html: 90;
-$porcent-js: 90;
-$porcent-react: 85;
-$porcent-css: 85;
-$porcent-scss: 80;
-$porcent-python: 45;
-$porcent-node: 30;
-$porcent-angular: 35;
-$porcent-vue: 42;
+$porcent-html: 100;
+$porcent-js: 100;
+$porcent-react: 100;
+$porcent-css: 100;
+$porcent-scss: 100;
+$porcent-python: 50;
+$porcent-node: 25;
+$porcent-angular: 25;
+$porcent-vue: 50;
 
 @function strokeDashoffset($num) {
 	@return 440 - (440 * $num) / 100;
 }
 
-.container__progressbars {
+.container-progressbars {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	min-width: 270px;
+	width: 100%;
+	min-height: 100%;
+}
+.container-progressbars-completed {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -43,13 +52,13 @@ $porcent-vue: 42;
 	transform: rotate(-90deg);
 }
 
-.progressbar__svg {
+.progressbar-svg {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
-.progressbar__svg-circle {
+.progressbar-svg-circle {
 	width: 100%;
 	height: 100%;
 	fill: none;
@@ -121,7 +130,7 @@ $porcent-vue: 42;
 	}
 }
 
-.progressbar__text {
+.progressbar-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
