@@ -1,3 +1,5 @@
+@import "../../Assets/scss/config";
+
 $color-black: hsl(0, 0%, 5%);
 $color-color: hsl(0, 0%, 100%);
 
@@ -22,7 +24,10 @@ $porcent-angular: 25;
 $porcent-vue: 50;
 
 @function strokeDashoffset($num) {
-	@return 440 - (440 * $num) / 100;
+	@return calc(440 - (440 * $num) / 100);
+}
+.mobile {
+	display: none;
 }
 
 .container-progressbars {
@@ -195,4 +200,18 @@ $porcent-vue: 50;
 	to {
 		stroke-dashoffset: strokeDashoffset($porcent-vue);
 	}
+}
+
+@include breakpoint(1000px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+		.progressbar {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
 }
