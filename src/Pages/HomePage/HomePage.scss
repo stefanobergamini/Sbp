@@ -1,5 +1,4 @@
-/* Global Styles */
-
+@import "../../Assets/scss/config";
 section {
     display: flex;
     align-items: center;
@@ -56,8 +55,7 @@ section {
 }
 
 section:nth-child(2) {
-    background: linear-gradient(180deg, rgba(0,195,227,1) 0%, rgba(0,216,207,1) 97%);;
-
+    background: linear-gradient(180deg, rgba(0, 195, 227, 1) 0%, rgba(0, 216, 207, 1) 97%);
     .content-wrapper {
         display: flex;
         align-items: center;
@@ -77,7 +75,7 @@ section:nth-child(2) {
 
             p {
                 color: white;
-                font-size: 20px;
+                font-size: 22px;
                 margin-top: 35px;
             }
 
@@ -90,7 +88,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
-    background: linear-gradient(180deg, rgba(0,195,227,1) 0%, rgba(0,200,223,1) 73%, rgba(0,214,209,1) 95%, rgba(0,216,207,1) 98%, rgba(0,216,207,1) 100%);
+    background: linear-gradient(180deg, rgba(0, 195, 227, 1) 0%, rgba(0, 200, 223, 1) 73%, rgba(0, 214, 209, 1) 95%, rgba(0, 216, 207, 1) 98%, rgba(0, 216, 207, 1) 100%);
 
     gap: 50px;
     padding-top: 100px;
@@ -99,6 +97,7 @@ section:nth-child(3) {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        margin-top: 50px;
 
         h2 {
             font-size: 40px;
@@ -110,47 +109,53 @@ section:nth-child(3) {
             color: white;
             margin-top: 50px;
         }
+
         button {
-            --border: 5px;    /* the border width */
-            --slant: 0.7em;   /* control the slanted corners */
-            --color: #37E8FC; /* the color */
-            
+            --border: 5px;
+            /* the border width */
+            --slant: 0.7em;
+            /* control the slanted corners */
+            --color: #37E8FC;
+            /* the color */
+
             font-size: 35px;
             padding: 0.4em 1.2em;
             border: none;
             cursor: pointer;
             font-weight: bold;
             color: var(--color);
-            background: 
-               linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
-               linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+            background:
+                linear-gradient(to bottom left, var(--color) 50%, #0000 50.1%) top right,
+                linear-gradient(to top right, var(--color) 50%, #0000 50.1%) bottom left;
             background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
             background-repeat: no-repeat;
             box-shadow:
-              0 0 0 200px inset var(--s,#0000),
-              0 0 0 var(--border) inset var(--color);
-            clip-path: 
+                0 0 0 200px inset var(--s, #0000),
+                0 0 0 var(--border) inset var(--color);
+            clip-path:
                 polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
-                        100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
-                       );
-            transition: color var(--t,0.3s), background-size 0.3s;
-          }
-          button:focus-visible {
+                    100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+            transition: color var(--t, 0.3s), background-size 0.3s;
+        }
+
+        button:focus-visible {
             outline-offset: calc(-1*var(--border));
             outline: var(--border) solid #000c;
             clip-path: none;
             background-size: 0 0;
-          }
-          button:hover,
-          button:active{
+        }
+
+        button:hover,
+        button:active {
             background-size: 100% 100%;
             color: #fff;
             --t: 0.2s 0.1s;
-          }
-          button:active {
+        }
+
+        button:active {
             --s: #0005;
             transition: none;
-          }
+        }
     }
 
     .air {
@@ -183,4 +188,71 @@ section:nth-child(4) {
     100% {
         background-position-x: -1000px;
     }
+}
+
+
+@include breakpoint(1000px) {
+    section:nth-child(2) {
+        .content-wrapper {
+            gap: 15px;
+            .content {
+                h2 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 20px;
+                }
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(550px) {
+    section {
+        padding: 0;
+    }
+    section:nth-child(2) {
+        .content-wrapper {
+            gap: 15px;
+            flex-direction: column;
+            .content {
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 17px;
+                    margin-top: 10px;
+                }
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    section:nth-child(3) {
+        .container {
+            gap: 50px;
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                h2 {
+                    font-size: 30px;
+                }
+        
+                p {
+                    font-size: 17px;
+                    margin-top: 20px;
+                    width: 75%;
+                }
+
+            }
+    
+        }
+    }
+    
 }

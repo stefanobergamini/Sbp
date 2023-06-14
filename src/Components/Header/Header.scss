@@ -1,4 +1,6 @@
-nav {
+@import "../../Assets/scss/config";
+
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,6 +13,10 @@ nav {
     background: #ffffff;
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
     z-index: 10000;
+
+    img {
+        height: 100%;
+    }
 
     div {
         display: flex;
@@ -37,6 +43,55 @@ nav {
     }
 }
 
-img {
-    height: 100%;
+@include breakpoint(800px) {
+    .navbar {
+        padding: 5px 10px;
+
+        div {
+            gap: 25px;
+
+            a {
+                font-size: 20px;
+            }
+
+            a.active {
+                color: #29abe2;
+            }
+
+            hr {
+                width: 5px;
+                border-radius: 5px;
+            }
+        }
+        img {
+            height: 50px;
+        }
+    }
+}
+@include breakpoint(500px) {
+    .navbar {
+        padding: 5px 10px;
+        height: 75px;
+
+        div {
+            gap: 15px;
+
+            a {
+                font-size: 15px;
+            }
+
+            a.active {
+                color: #29abe2;
+            }
+
+            hr {
+                width: 5px;
+                border-radius: 5px;
+            }
+        }
+        
+        img {
+            height: 50px;
+        }
+    }
 }

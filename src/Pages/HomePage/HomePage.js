@@ -11,7 +11,7 @@ import Footer from '../../Components/Footer/Footer';
 export default function HomePage() {
 
   return (
-    <div>
+    <>
       <Header />
       
       <BemVindo />
@@ -36,6 +36,6 @@ export default function HomePage() {
           </div>
         </div>
       </section> */}
-    </div>
+    </>
   )
 }

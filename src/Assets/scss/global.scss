@@ -30,7 +30,6 @@ body {
 #root {
   @include flex-element(column, center, space-between);
   min-height: 100%;
-  gap: 2rem;
 }
 img {
   display: block;
