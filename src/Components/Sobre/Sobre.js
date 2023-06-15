@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import Progress from './Progress'
 import { slideIn } from '../../Utils/motion';
@@ -17,8 +17,12 @@ export default function Sobre() {
                 <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className="content">
                     <h2>Sobre mim</h2>
                     <p>
-                        Conheci a programação em meu ensino médio técnico, realizado no Instituto Federal de Santa Catarina. Lá aprendi minha primeira linguagem, C.
-                        Com ela tive uma base para aprender outras linguagens como Java, Python e JavaScript, tendo algumas noções basicas de C++, C# e TypeScript.
+                    Eu sou um programador front-end com formação técnica em eletrônica pelo IFSC 
+                    e graduação em ciências da computação pela UFSC. 
+                    Ao longo da minha jornada acadêmica e profissional, 
+                    desenvolvi habilidades sólidas na criação de interfaces de usuário interativas e responsivas, 
+                    utilizando as mais recentes tecnologias front-end, como HTML, CSS e JavaScript.
+                    <br />Também tenho experiências na área de back-end, tendo familiaridade com Python, Java, C, C# e Node.
                     </p>
                 </motion.div>
                 

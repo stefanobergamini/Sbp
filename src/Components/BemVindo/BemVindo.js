@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import photo from '../../Assets/imgs/photo.jpg'
-import { fadeIn, slideIn, textVariant } from '../../Utils/motion';
+import { fadeIn, textVariant } from '../../Utils/motion';
 
 export default function BemVindo() {
   return (
@@ -16,8 +16,8 @@ export default function BemVindo() {
               variants={textVariant()} className="content">
               <h2>Bem vindo ao meu <strong>Portfólio</strong></h2>
               <p>
-                Aqui é um site onde realizei por conta própria para treinar e aprender ainda mais sobre React,
-                tendo a liberdade de realizar da maneira que desejo, apesar de não ser especialista em design.
+                <strong>Bem-vindo(a) ao meu site desenvolvido com React!</strong> <br />
+                Aqui você encontrará um espaço digital criado por um programador de 25 anos, dedicado a trazer soluções modernas e eficientes para o mundo da web.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0 }}

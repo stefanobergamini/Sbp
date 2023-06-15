@@ -1,8 +1,6 @@
 import React from 'react'
 import "./HomePage.scss"
-import { motion } from 'framer-motion';
 import Header from '../../Components/Header/Header';
-import { fadeIn, slideIn, textVariant } from '../../Utils/motion';
 import BemVindo from '../../Components/BemVindo/BemVindo';
 import Sobre from '../../Components/Sobre/Sobre';
 import Timeline from '../../Components/Timeline/Timeline';
