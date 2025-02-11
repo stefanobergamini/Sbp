@@ -17,7 +17,7 @@ export default function Progress() {
                             <svg className="progressbar-svg">
                                 <circle cx="80" cy="80" r="70" className="progressbar-svg-circle circle-react shadow-react"> </circle>
                             </svg>
-                            <span className="progressbar-text shadow-react">React.js</span>
+                            <span className="progressbar-text shadow-react">JavaScript</span>
                         </div>
 
                         <div className="progressbar">
@@ -45,8 +45,14 @@ export default function Progress() {
                             <svg className="progressbar-svg">
                                 <circle cx="80" cy="80" r="70" className="progressbar-svg-circle circle-js shadow-js"> </circle>
                             </svg>
-                            <span className="progressbar-text shadow-js">JavaScript</span>
+                            <span className="progressbar-text shadow-js">React</span>
                         </div>
+                    </div>
+                    <div className="progressbar">
+                        <svg className="progressbar-svg">
+                            <circle cx="80" cy="80" r="70" className="progressbar-svg-circle circle-liquid shadow-liquid"> </circle>
+                        </svg>
+                        <span className="progressbar-text shadow-liquid">Liquid</span>
                     </div>
                     <div className="progressbar">
                         <svg className="progressbar-svg">
@@ -126,6 +132,12 @@ export default function Progress() {
                             <circle cx="55" cy="55" r="50" className="progressbar-svg-circle circle-vue shadow-vue"> </circle>
                         </svg>
                         <span className="progressbar-text shadow-vue">Vue.js</span>
+                    </div>
+                    <div className="progressbar">
+                        <svg className="progressbar-svg">
+                            <circle cx="55" cy="55" r="50" className="progressbar-svg-circle circle-liquid shadow-liquid"> </circle>
+                        </svg>
+                        <span className="progressbar-text shadow-liquid">Liquid</span>
                     </div>
                     <div className="progressbar">
                         <svg className="progressbar-svg">

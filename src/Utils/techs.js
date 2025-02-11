@@ -1,4 +1,5 @@
 import reacts from "../Assets/imgs/logo-react-icon.png"
+import shopify from "../Assets/imgs/logo-shopify.png"
 import IFSC from "../Assets/imgs/Logo_IFSC.png"
 import UFSC from "../Assets/imgs/UFSC.png"
 // import js from "../Assets/imgs/JavaScript-logo.png"
@@ -87,6 +88,22 @@ const experiences = [
       iconBg: '#222222',
       about: 'Desenvolvimento de LPs utilizando de React',
       date: 'Sep 2021 - Mar 2023',
+    },
+    {
+      title: 'Desenvolvedor Front End',
+      company_name: 'Check Commerce',
+      icon: shopify,
+      iconBg: '#222222',
+      about: 'Desenvolvimento de Lojas Shopify',
+      date: 'Jun 2023 - Mai 2024',
+    },
+    {
+      title: 'Head de desenvolvimento e evolução',
+      company_name: 'Check Commerce',
+      icon: shopify,
+      iconBg: '#222222',
+      about: 'Desenvolvimento de Lojas Shopify e gestão de equipe',
+      date: 'Mai 2024 - Atualmente',
     },
   ];
 

@@ -12,6 +12,7 @@ $color-node: hsl(110, 100%, 60%);
 $color-react: hsl(180, 100%, 60%);
 $color-angular: hsl(0, 100%, 60%);
 $color-vue: hsl(145, 100%, 60%);
+$color-liquid: hsl(146, 100%, 11%);
 
 $porcent-html: 100;
 $porcent-js: 100;
@@ -22,6 +23,7 @@ $porcent-python: 50;
 $porcent-node: 25;
 $porcent-angular: 25;
 $porcent-vue: 50;
+$porcent-liquid: 100;
 
 @function strokeDashoffset($num) {
 	@return calc(440 - (440 * $num) / 100);
@@ -103,6 +105,9 @@ $porcent-vue: 50;
 	&-vue {
 		filter: drop-shadow(0 0 5px $color-vue);
 	}
+	&-liquid {
+		filter: drop-shadow(0 0 5px $color-liquid);
+	}
 }
 
 .circle {
@@ -132,6 +137,9 @@ $porcent-vue: 50;
 	}
 	&-vue {
 		animation: anim_circle-vue 1s ease-in-out forwards;
+	}
+	&-liquid {
+		animation: anim_circle-liquid 1s ease-in-out forwards;
 	}
 }
 
@@ -199,6 +207,12 @@ $porcent-vue: 50;
 @keyframes anim_circle-vue {
 	to {
 		stroke-dashoffset: strokeDashoffset($porcent-vue);
+	}
+}
+
+@keyframes anim_circle-liquid {
+	to {
+		stroke-dashoffset: strokeDashoffset($porcent-liquid);
 	}
 }
 

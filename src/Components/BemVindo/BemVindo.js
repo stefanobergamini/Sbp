@@ -17,7 +17,7 @@ export default function BemVindo() {
               <h2>Bem vindo ao meu <strong>Portfólio</strong></h2>
               <p>
                 <strong>Bem-vindo(a) ao meu site desenvolvido com React!</strong> <br />
-                Aqui você encontrará um espaço digital criado por um programador de 25 anos, dedicado a trazer soluções modernas e eficientes para o mundo da web.
+                Aqui você encontrará um espaço digital criado por mim, dedicado a oferecer soluções inovadoras e eficientes para o mundo da web.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0 }}
