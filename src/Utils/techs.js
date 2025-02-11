@@ -58,36 +58,12 @@ const techs = [
 
 const experiences = [
     {
-      title: 'Técnico em Eletrônica',
-      company_name: 'Instituto Federal de Santa Catarina',
-      icon: IFSC,
+      title: 'Head de desenvolvimento e evolução',
+      company_name: 'Check Commerce',
+      icon: shopify,
       iconBg: '#222222',
-      about: '',
-      date: 'Jan 2012 - Dez 2015',
-    },
-    {
-      title: 'Bacharelado em Ciências da Computação',
-      company_name: 'Universidade Federal de Santa Catarina',
-      icon: UFSC,
-      iconBg: '#222222',
-      about: '',
-      date: 'Jan 2016 - Dez 2022',
-    },
-    {
-      title: 'Estágiario',
-      company_name: 'Fontes Promotora',
-      icon: python,
-      iconBg: '#222222',
-      about: 'Tecnologias utilizadas: Python e Selenium',
-      date: 'Jul 2021 - Set 2021',
-    },
-    {
-      title: 'Desenvolvedor Front End',
-      company_name: 'Connvert',
-      icon: reacts,
-      iconBg: '#222222',
-      about: 'Desenvolvimento de LPs utilizando de React',
-      date: 'Sep 2021 - Mar 2023',
+      about: 'Desenvolvimento de Lojas Shopify e gestão de equipe',
+      date: 'Mai 2024 - Atualmente',
     },
     {
       title: 'Desenvolvedor Front End',
@@ -98,13 +74,37 @@ const experiences = [
       date: 'Jun 2023 - Mai 2024',
     },
     {
-      title: 'Head de desenvolvimento e evolução',
-      company_name: 'Check Commerce',
-      icon: shopify,
+      title: 'Desenvolvedor Front End',
+      company_name: 'Connvert',
+      icon: reacts,
       iconBg: '#222222',
-      about: 'Desenvolvimento de Lojas Shopify e gestão de equipe',
-      date: 'Mai 2024 - Atualmente',
+      about: 'Desenvolvimento de LPs utilizando de React',
+      date: 'Sep 2021 - Mar 2023',
     },
-  ];
+    {
+      title: 'Estágiario',
+      company_name: 'Fontes Promotora',
+      icon: python,
+      iconBg: '#222222',
+      about: 'Tecnologias utilizadas: Python e Selenium',
+      date: 'Jul 2021 - Set 2021',
+    },
+    {
+      title: 'Bacharelado em Ciências da Computação',
+      company_name: 'Universidade Federal de Santa Catarina',
+      icon: UFSC,
+      iconBg: '#222222',
+      about: '',
+      date: 'Jan 2016 - Dez 2022',
+    },
+    {
+      title: 'Técnico em Eletrônica',
+      company_name: 'Instituto Federal de Santa Catarina',
+      icon: IFSC,
+      iconBg: '#222222',
+      about: '',
+      date: 'Jan 2012 - Dez 2015',
+    },
+];
 
-export {techs, experiences}; 
+export {techs, experiences};
